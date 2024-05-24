@@ -1,11 +1,11 @@
-file='stock.csv'
+file='test.csv' #INSERT YOUR FILE NAME HERE
 f = open(file,'r',encoding="utf8")
 y=int(0)
 numero=int(0)
 criga=0
 conta=int(0)
 conta_elementi=int(0)
-elementi_secondari=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+elementi_secondari=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] #NUMBER OF CSV COLUMNS, ADD VALUES IF YOU NEED MORE
 last_line=str
 for x in f:
  conta_elementi=f.readline().count(';')+1
